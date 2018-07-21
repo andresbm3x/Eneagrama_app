@@ -1,4 +1,5 @@
 import 'package:eneagram_app/models/answer.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class Question {
   int idQuestion;
@@ -8,6 +9,14 @@ class Question {
   Question({this.idQuestion, this.firstAnswer, this.secondAnswer});
 
 static List<Question> questionsList(){
+
+    final doc = Firestore.instance.collection("preguntas").document();
+    var document;
+    doc.get().then((DocumentSnapshot doc){
+      document=doc;
+    });
+
+    var val = document[""];
     return <Question>[
     Question(
       idQuestion: 1,
