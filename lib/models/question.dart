@@ -10,13 +10,13 @@ class Question {
 
 static List<Question> questionsList(){
 
-    final doc = Firestore.instance.collection("preguntas").document();
-    var document;
-    doc.get().then((DocumentSnapshot doc){
-      document=doc;
-    });
+    //final doc = Firestore.instance.collection("preguntas").document();
+    //var document;
+    //doc.get().then((DocumentSnapshot doc){
+    //  document=doc;
+    //});
 
-    var val = document[""];
+    //var val = document[""];
     return <Question>[
     Question(
       idQuestion: 1,
