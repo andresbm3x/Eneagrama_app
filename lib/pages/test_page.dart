@@ -17,7 +17,8 @@ class TestPage extends StatelessWidget {
         onPressed: () {},
         icon: Icon(Icons.check),
         label: Text("Finalizar"),
-        notchMargin: 50.0,
+        
+        //notchMargin: 50.0,
       ),
       bottomNavigationBar: BottomAppBar(
         child: Container(
