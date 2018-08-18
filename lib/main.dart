@@ -1,3 +1,4 @@
+import 'package:eneagram_app/pages/initial_page.dart';
 import 'package:eneagram_app/pages/menu_page.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
         accentColor: Color(0xFFDFB966),
         bottomAppBarColor: Colors.purple[600]
       ),
-      home: MenuPage()
+      home: InitialPage(),
     );
   }
 }
