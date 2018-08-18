@@ -3,7 +3,7 @@ import 'package:eneagram_app/models/question.dart';
 import 'package:flutter/material.dart';
 
 class QuestionWidget extends StatefulWidget {
-  Question _question;
+  final Question _question;
 
   QuestionWidget(this._question);
 
